@@ -1,5 +1,4 @@
 import pygame
-import math
 import color_values
 import random
 
@@ -43,8 +42,7 @@ def convex_hull(points):
         
         for i in range(n):
             if orientation(points[p], points[i], points[q]) == 2:
-                q = i
-                
+                q = i   
         p = q
         
         if p == l: break
